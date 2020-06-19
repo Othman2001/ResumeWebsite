@@ -1,0 +1,370 @@
+body{
+    background-color: #f26b38 !important;
+    font-family: 'Roboto Mono' !important;
+font-size: 13px;
+color: #363636;
+letter-spacing: 0;
+font-weight: 400 !important;
+
+}
+
+
+/*end style navbar*/
+  
+  @keyframes glitch-animation-1 {
+    0% {
+      clip: rect(67px, 350px, 44px, 30px);
+    }
+    5% {
+      clip: rect(94px, 350px, 54px, 30px);
+    }
+    10% {
+      clip: rect(100px, 350px, 92px, 30px);
+    }
+    15% {
+      clip: rect(102px, 350px, 131px, 30px);
+    }
+    20% {
+      clip: rect(6px, 350px, 133px, 30px);
+    }
+    25% {
+      clip: rect(19px, 350px, 93px, 30px);
+    }
+    30% {
+      clip: rect(68px, 350px, 115px, 30px);
+    }
+    35% {
+      clip: rect(138px, 350px, 5px, 30px);
+    }
+    40% {
+      clip: rect(143px, 350px, 56px, 30px);
+    }
+    45% {
+      clip: rect(123px, 350px, 6px, 30px);
+    }
+    50% {
+      clip: rect(139px, 350px, 76px, 30px);
+    }
+    55% {
+      clip: rect(119px, 350px, 129px, 30px);
+    }
+    60% {
+      clip: rect(127px, 350px, 144px, 30px);
+    }
+    65% {
+      clip: rect(119px, 350px, 73px, 30px);
+    }
+    70% {
+      clip: rect(80px, 350px, 108px, 30px);
+    }
+    75% {
+      clip: rect(140px, 350px, 128px, 30px);
+    }
+    80% {
+      clip: rect(33px, 350px, 81px, 30px);
+    }
+    85% {
+      clip: rect(105px, 350px, 139px, 30px);
+    }
+    90% {
+      clip: rect(89px, 350px, 48px, 30px);
+    }
+    95% {
+      clip: rect(70px, 350px, 53px, 30px);
+    }
+    100% {
+      clip: rect(41px, 350px, 42px, 30px);
+    }
+  }
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(18px, 350px, 94px, 30px);
+    }
+    5% {
+      clip: rect(91px, 350px, 62px, 30px);
+    }
+    10% {
+      clip: rect(24px, 350px, 14px, 30px);
+    }
+    15% {
+      clip: rect(31px, 350px, 150px, 30px);
+    }
+    20% {
+      clip: rect(49px, 350px, 125px, 30px);
+    }
+    25% {
+      clip: rect(139px, 350px, 135px, 30px);
+    }
+    30% {
+      clip: rect(29px, 350px, 26px, 30px);
+    }
+    35% {
+      clip: rect(148px, 350px, 54px, 30px);
+    }
+    40% {
+      clip: rect(59px, 350px, 99px, 30px);
+    }
+    45% {
+      clip: rect(50px, 350px, 13px, 30px);
+    }
+    50% {
+      clip: rect(92px, 350px, 24px, 30px);
+    }
+    55% {
+      clip: rect(10px, 350px, 46px, 30px);
+    }
+    60% {
+      clip: rect(29px, 350px, 4px, 30px);
+    }
+    65% {
+      clip: rect(113px, 350px, 142px, 30px);
+    }
+    70% {
+      clip: rect(76px, 350px, 36px, 30px);
+    }
+    75% {
+      clip: rect(144px, 350px, 132px, 30px);
+    }
+    80% {
+      clip: rect(65px, 350px, 125px, 30px);
+    }
+    85% {
+      clip: rect(117px, 350px, 34px, 30px);
+    }
+    90% {
+      clip: rect(11px, 350px, 73px, 30px);
+    }
+    95% {
+      clip: rect(16px, 350px, 40px, 30px);
+    }
+    100% {
+      clip: rect(22px, 350px, 78px, 30px);
+    }
+  }
+  
+  /*style wrapper container*/
+  
+  .wrapper{
+    position: relative;
+    left: 34%;
+    top: 12%;
+  }
+
+
+  
+.wrappe{
+  margin: 30px;
+  position: relative;
+  background-color: #ffff;
+  height: 93vh;
+}
+/* style navbar*/
+nav ul li a {
+  
+  margin-top: 20px !important;
+  margin-left: 63px !important;
+
+}
+nav ul li a:hover {
+  color: #f26b38 !important;
+  cursor: pointer;
+
+}
+nav ul li button{
+  border: 1px solid gray !important;
+  background-color: #ffff;
+}
+nav ul li button:hover{
+  background-color: #f26b38;
+  border: 1px solid #f26b38;
+  color: #ffff;
+  transition: 0.2s all ease-in-out;
+}
+.wrapper .glitch{
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+/*end style navbar*/
+
+
+.wrapper h1.glitch {
+  color:black;
+  font-family: sans-serif;
+  font-weight: 400;
+  position: relative;
+  font-size: 68px;
+  padding: 30px;
+  text-transform: uppercase;
+}
+.wrapper h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: black;
+  content: "I'm Othman";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+}
+.wrapper h1.glitch::before {
+  left: 1px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch::after {
+  left: -1px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+  /*end wrapper contanier*/
+  
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position: relative;
+  left: 90%;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+  /*dark mode*/
+.wrapper-dark-mode{
+  background-color: #31313a;
+  color: gray;
+
+}
+.dark-color-for-text{
+  color: white !important;  
+}
+  /*end dark mode*/
+
+  .colors{
+    display: flex;
+  }
+  .orange{
+    border: 1px solid #f26b38;
+    width: 20px;
+    height: 20px;
+    color: #f26b38;
+    background-color: #f26b38;
+    margin-left: 10px;
+  
+  }
+  .blue{
+   border: 1px solid blue;
+    width: 20px;
+    height: 20px;
+    color: blue;
+    background-color: blue;
+    margin-left: 10px;
+  }
+  .green{
+    border: 1px solid green;
+    width: 20px;
+    height: 20px;;
+    color: green;
+    background-color: green;
+    margin-left: 10px;
+  }
+  .pink{
+    border: 1px solid palevioletred;
+    width: 20px;
+    height: 20px;
+    color: palevioletred;
+    background-color: palevioletred;
+    margin-left: 10px;
+  }
+  .purble{
+    border: 1px solid purple;
+    width: 20px;
+    height: 20px;;
+    color: purple;
+    background-color: purple;
+    margin-left: 10px;
+  }
+  .red{
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;;
+    color: red;
+    background-color: red;
+    margin-left: 10px;
+  }
+  .orangeClass{
+    background-color: #f26b38 !important;
+  }
+  .greenClass{
+    background-color: #78cc6d!important;
+  }
+  .blueClass{
+    background-color: #0856c1 !important;
+  }
+  .pinkClass{
+    background-color : #ff5e94 !important;
+  }
+  .purbleClass{
+    background-color: #c446da !important;
+  }
+  .redClass{
+    background-color: #e8676b !important;
+  }

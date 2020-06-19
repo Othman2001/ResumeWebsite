@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<title>Basic One Page Scroll Demo</title>
+	<style type="text/css">
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Roboto';
+}
+
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 10em;
+  color:#fff;
+}
+
+#fullpage section { height: 100vh; }
+
+#fullpage section:nth-child(1) { background-color: rgb(86, 188, 138); }
+
+#fullpage section:nth-child(2) { background-color: rgb(167, 125, 194); }
+
+#fullpage section:nth-child(3) { background-color: rgb(54, 70, 93); }
+
+#fullpage section:nth-child(4) { background-color: rgb(242, 153, 46); }
+
+#fullpage section:nth-child(5) { background-color: rgb(62, 43, 77); }
+
+#fullpage section:nth-child(6) { background-color: rgb(82, 150, 184); }
+</style>
+	</head>
+	<body>
+<div id="fullpage">
+      <section>Basic One Page Scroll Demo</section>
+      <section>2</section>
+      <section>3</section>
+      <section>4</section>
+      <section>5</section>
+      <section>6</section>
+    </div>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script> 
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
+<script type="text/javascript" src='./js/jquery.fullpage.min.js'></script> 
+<script type="text/javascript">
+		FastClick.attach(document.body);
+		$('#fullpage').fullpage();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
